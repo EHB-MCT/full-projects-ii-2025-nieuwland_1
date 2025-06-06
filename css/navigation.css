@@ -1,0 +1,19 @@
+nav {
+	background-color: #111827;
+	color: white;
+	padding: 16px 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__link {
+	color: white;
+	margin-left: 16px;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.nav__link:hover {
+	text-decoration: underline;
+}
