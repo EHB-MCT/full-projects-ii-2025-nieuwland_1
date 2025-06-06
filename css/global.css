@@ -1,0 +1,22 @@
+/* global.css */
+:root {
+	--color-orange: #f97316;
+	--color-orange-dark: #ea580c;
+	--color-blue: #3b82f6;
+	--color-blue-dark: #2563eb;
+	--color-bg: #fdfdfd;
+	--color-text: #111;
+	--font-main: "Outfit", sans-serif;
+}
+
+body {
+	background-color: #fdfdfd;
+	color: #111111;
+	font-family: Outfit, sans-serif;
+	padding: 30px;
+	line-height: 25px;
+	font-size: 16px;
+}
+section {
+	margin-bottom: 50px;
+}

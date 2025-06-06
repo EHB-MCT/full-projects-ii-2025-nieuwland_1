@@ -1,0 +1,33 @@
+.table {
+	font-size: 15px;
+	font-family: inherit;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	overflow: hidden;
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 16px;
+}
+
+.table th,
+.table td {
+	padding: 12px 16px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.table th {
+	background-color: #f3f4f6;
+	font-weight: 600;
+	color: #333;
+	border-bottom: 2px solid #bbb;
+}
+
+.table tbody tr:nth-child(odd) {
+	background-color: #fafafa;
+}
+
+.table tbody tr:hover {
+	background-color: #e0f2fe;
+	cursor: default;
+}

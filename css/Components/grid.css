@@ -1,0 +1,26 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.grid__item {
+	background: #e5e7eb;
+	padding: 20px;
+	text-align: center;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	font-weight: 600;
+	color: #111827;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+	cursor: default;
+}
+
+.grid__item:hover {
+	background-color: #3b82f6;
+	color: white;
+	transform: translateY(-4px);
+	box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+}
