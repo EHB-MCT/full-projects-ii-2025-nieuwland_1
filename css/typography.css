@@ -1,57 +1,67 @@
 h1,
 h2,
 h3 {
-	font-weight: 600;
-	margin-top: 24px;
-	color: #111111;
-	line-height: 19px;
+  font-weight: 600;
+  margin-top: 24px;
+  color: #111111;
+  line-height: 19px;
 }
 
 h1 {
-	font-size: 32px;
-	line-height: 38px;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 h2 {
-	font-size: 24px;
-	line-height: 29px;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 h3 {
-	font-size: 19px;
-	line-height: 23px;
+  font-size: 19px;
+  line-height: 23px;
 }
 
 p {
-	margin: 16px 0;
+  margin: 16px 0;
 }
 
 a {
-	color: #0077cc;
-	text-decoration: underline;
+  color: #0077cc;
+  text-decoration: underline;
 }
 
 a:hover {
-	color: #005fa3;
+  color: beige;
 }
 
 blockquote {
-	border-left: 4px solid #ccc;
-	padding-left: 16px;
-	color: #666;
-	font-style: italic;
-	margin: 16px 0;
+  border-left: 4px solid #ccc;
+  padding-left: 16px;
+  color: #666;
+  font-style: italic;
+  margin: 16px 0;
 }
 
 code {
-	background: #f4f4f4;
-	padding: 3px 6px;
-	border-radius: 4px;
-	font-family: Outfit, sans-serif;
+  background: #f4f4f4;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: Outfit, sans-serif;
 }
 
 pre {
-	background: #f4f4f4;
-	padding: 16px;
-	overflow-x: auto;
+  background: #f4f4f4;
+  padding: 16px;
+  overflow-x: auto;
+}
+.paragraph {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.hero__title {
+  font-size: 2rem;
+  font-weight: bold;
 }
