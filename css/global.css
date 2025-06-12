@@ -1,22 +1,89 @@
 /* global.css */
 :root {
-	--color-orange: #f97316;
-	--color-orange-dark: #ea580c;
-	--color-blue: #3b82f6;
-	--color-blue-dark: #2563eb;
-	--color-bg: #fdfdfd;
-	--color-text: #111;
-	--font-main: "Outfit", sans-serif;
+  --color-orange: #f97316;
+  --color-orange-dark: #ea580c;
+  --color-blue: #3b82f6;
+  --color-blue-dark: #2563eb;
+  --color-bg: #fdfdfd;
+  --color-text: #111;
+  --font-main: "Outfit", sans-serif;
 }
 
 body {
-	background-color: #fdfdfd;
-	color: #111111;
-	font-family: Outfit, sans-serif;
-	padding: 30px;
-	line-height: 25px;
-	font-size: 16px;
+  background-color: #fdfdfd;
+  color: #111111;
+  font-family: Outfit, sans-serif;
+  padding: 30px;
+  line-height: 25px;
+  font-size: 16px;
 }
 section {
-	margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Hero met achtergrondafbeelding */
+.hero {
+  background: url("../images/schoolplein.jpg") no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero__logo {
+  width: 20rem;
+
+  margin-bottom: 7rem;
+}
+
+.map {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.map iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  margin: 1rem 0;
+}
+.backgroundImage {
+  background: url("../images/backgroundHOME.png") no-repeat center center;
+  background-size: cover;
+  padding-bottom: 2rem; /* zodat alles erin past */
+}
+
+.activiteiten {
+  padding: 10rem 1rem 6rem; /* Onder extra ruimte voor overlap */
+  position: relative;
+}
+
+.activiteiten__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.activiteiten__image {
+  width: 100%;
+  display: block;
+  border-radius: 0;
+}
+.colorBackground {
+  background: #6aabfb;
+}
+
+.wrapperBACK {
+  position: relative;
+  background-color: #2563eb;
 }
