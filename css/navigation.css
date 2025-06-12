@@ -1,19 +1,122 @@
-nav {
-	background-color: #111827;
-	color: white;
-	padding: 16px 32px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+/* Navigatiebalk bovenaan met achtergrondkleur en witte tekst */
+nav.main-nav {
+  color: #fff;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; /* Blijft bovenaan bij scrollen */
+  top: 0;
+  z-index: 1000; /* Zorgt dat hij boven andere elementen ligt */
 }
 
+/* Logo met grotere en vetgedrukte tekst */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Container voor de navigatielinks */
+.nav__menu {
+  display: flex;
+  gap: 1rem; /* ruimte tussen links */
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* voor mobiele animatie */
+}
+
+/* Stijl voor elke navigatielink */
 .nav__link {
-	color: white;
-	margin-left: 16px;
-	text-decoration: none;
-	font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.37rem;
+  transition: background 0.2s ease; /* kleurverandering bij hover */
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
+/* Kleur bij hover over een link */
 .nav__link:hover {
-	text-decoration: underline;
+  background: #3b82f6;
+  opacity: 0.3;
+  color: white;
+}
+
+/* Hamburgerknop voor mobiel menu */
+.nav__toggle {
+  display: none; /* verborgen op desktop */
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Mobiele weergave onder 390px  IPHONE 12 PRO */
+@media (max-width: 390px) {
+  .main-nav {
+    flex-direction: row; /* alles op 1 lijn */
+    justify-content: space-between; /* logo links*/
+    align-items: center;
+  }
+
+  .nav__toggle {
+    display: block;
+    font-size: 2rem;
+    align-self: flex-start;
+  }
+
+  .nav__menu {
+    width: 100%;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    background-color: #3b82f6;
+  }
+
+  .nav__menu.active {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+.footer {
+  background: #5c2623;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  width: 18rem;
+  margin: 0 auto; /*center block in het midden*/
+}
+
+.footer__logo {
+  width: 13rem; /* breedte van het logo */
+  margin-bottom: 1rem; /* Ruimte onder het logo */
+}
+.footer__socials a img:hover {
+  transform: scale(1.1); /* Vergroot logo met 5% bij hover */
+  transition: all 0.3s ease;
+}
+
+.footer .nav__link {
+  display: block; /* Elke link op een aparte regel */
+  margin: 0.5rem 0; /* Verticale ruimte tussen links */
+  color: white; /*wite linkkleur */
+  text-decoration: none; /* Geen onderlijning */
+}
+.footer__socials {
+  margin-top: 2rem; /* Ruimte boven de icoontjes */
+  display: flex; /* Zet icone naast elkaar */
+  justify-content: center; /* centreren horizontaal */
+  gap: 2rem; /* afstand tussen iconen */
+}
+
+.footer__socials a img {
+  width: 2rem; /* Gelijke grootte voor alle iconen */
+  height: auto;
+  filter: drop-shadow(
+    0 2px 4px rgba(0, 0, 0, 0.3)
+  ); /* Schaduw zoals op screenshot */
 }

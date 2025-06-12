@@ -1,26 +1,79 @@
 .grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 16px;
-	padding-top: 16px;
-	padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .grid__item {
-	background: #e5e7eb;
-	padding: 20px;
-	text-align: center;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-	font-weight: 600;
-	color: #111827;
-	transition: background-color 0.3s ease, transform 0.2s ease;
-	cursor: default;
+  background: #e5e7eb;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  color: #111827;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: default;
 }
 
 .grid__item:hover {
-	background-color: #3b82f6;
-	color: white;
-	transform: translateY(-4px);
-	box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+  background-color: #3b82f6;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+}
+.tile-grid {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 3rem auto;
+}
+
+.tile {
+  position: absolute;
+  width: 110px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1; /*boven de foto*/
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.tile-icon {
+  width: 45px; /* Maak kleiner */
+  height: auto; /* Zorgt voor correcte verhouding */
+  margin-bottom: 0.2rem;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+}
+.tile__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  font-family: outfit, sans;
+}
+
+/* Posities in cirkelvorm */
+.tile--blue {
+  background: #1d44c0;
+}
+.tile--orange {
+  background: #e1965b;
+}
+.tile--red {
+  background: #fa5139;
+}
+.tile--black {
+  background: #000000;
+}
+.tile--brown {
+  background: #ad563f;
 }
