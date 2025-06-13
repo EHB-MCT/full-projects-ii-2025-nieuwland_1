@@ -1,95 +1,312 @@
 /* global.css */
 :root {
-  --color-orange: #f97316;
-  --color-orange-dark: #ea580c;
-  --color-blue: #3b82f6;
-  --color-blue-dark: #2563eb;
-  --color-bg: #fdfdfd;
-  --color-text: #111;
-  --font-main: "Outfit", sans-serif;
+	--color-orange: #f97316;
+	--color-orange-dark: #ea580c;
+	--color-blue: #3b82f6;
+	--color-blue-dark: #2563eb;
+	--color-bg: #fdfdfd;
+	--color-text: #111;
+	--font-main: "Outfit", sans-serif;
 }
 
 body {
-  background-color: #fdfdfd;
-  color: #111111;
-  font-family: Outfit, sans-serif;
-  line-height: 25px;
-  font-size: 16px;
-  width: 100%;
-  overflow-x: hidden;
+	background-color: #fdfdfd;
+	color: #111111;
+	font-family: Outfit, sans-serif;
+	line-height: 25px;
+	font-size: 16px;
+	width: 100%;
+
+	width: 100%;
+	overflow-x: visible;
+	overflow-y: auto;
 }
 section {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .container {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
 
-/* Hero met achtergrondafbeelding */
+/* hero met achtergrondafbeelding */
 .hero {
-  background: url("../images/schoolplein.jpg") no-repeat center/cover;
-  color: white;
-  text-align: center;
-  padding: 4rem 1rem;
+	background: url("../images/schoolplein.jpg") no-repeat center/cover;
+	color: white;
+	text-align: center;
+	padding: 1rem 5rem;
 }
 
 .hero__logo {
-  width: 20rem;
-
-  margin-bottom: 7rem;
+	width: 25rem;
+	margin-bottom: 1rem;
+	margin-top: 6rem;
 }
 
+.hero__logoIndex {
+	width: 20rem;
+	margin-bottom: 10rem;
+}
 .map {
-  padding: 2rem 1rem;
-  text-align: center;
+	padding: 2rem 1rem;
+	text-align: center;
 }
 
 .map iframe {
-  width: 100%;
-  height: 200px;
-  border: none;
-  margin: 1rem 0;
+	width: 100%;
+	height: 200px;
+	border: none;
+	margin: 1rem 0;
 }
 .backgroundImage {
-  background: url("../images/backgroundHOME.png") no-repeat center center;
-  background-size: cover;
-  padding-bottom: 2rem; /* zodat alles erin past */
+	background: url("../images/backgroundHOME.png") no-repeat center center;
+	background-size: cover;
+	padding-bottom: 2rem; /* zodat alles erin past */
 }
 .contactBACk {
-  background: url(../images/contactBACK.png) no-repeat center center;
-  background-size: cover;
-  padding-bottom: 2rem; /* zodat alles erin past */
+	background: url(../images/contactBACK.png) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.schoolBACk {
+	background: url(../images/kkk.png) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+}
+.fotoBACK {
+	background: url(../images/sss.png) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
 }
 .activiteiten {
-  padding: 7rem 1rem 1rem; /* Onder extra ruimte voor overlap */
-  position: relative;
+	padding: 7rem 1rem 1rem; /* onder extra ruimte voor overlap */
+	position: relative;
 }
 
 .activiteiten__wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+	position: relative;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 .activiteiten__image {
-  width: 100%;
-  display: block;
-  border-radius: 0;
+	width: 100%;
+	display: block;
+	border-radius: 0;
 }
 .colorBackground {
-  background: #6aabfb;
+	background: #6aabfb;
 }
 
 .wrapperBACK {
-  position: relative;
-  background-color: #2563eb;
-  width: 100%;
+	position: relative;
+	background-color: #6aabfb;
+	width: 100%;
+	min-height: 100vh;
+}
+.school-info {
+	background-color: #60a5fa;
+	padding: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 13rem;
+}
+.school-info2 {
+	background-color: #6aabfb;
+	padding: 3rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 20rem;
+}
+.info-blok {
+	position: relative;
+	width: 100%;
+}
+
+.info-img {
+	width: 90%;
+	max-width: 100%;
+}
+
+.info-img.left {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.info-img.right {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.info-img img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 4px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-tekst {
+	position: absolute;
+	max-width: 80%;
+	padding: 1rem;
+	color: white;
+	font-size: 1.1rem;
+	line-height: 1.6;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-tekst.rechts {
+	left: 0;
+	bottom: -10rem;
+}
+
+.info-tekst.links {
+	right: 0;
+	bottom: -10rem;
+}
+
+.info-tekst.links2 {
+	right: 0;
+	bottom: -9rem;
+}
+
+.info-tekst.links3 {
+	right: 0;
+	bottom: -14rem;
+}
+
+.info-tekst.rood {
+	background-color: #f44336;
+}
+
+.info-tekst.oranje {
+	background-color: #e1965b;
+}
+
+.info-tekst.blauw {
+	background-color: #1e3a8a;
+	margin-bottom: 7rem;
+}
+
+.foto-collage {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 2rem 1rem;
+	margin: 0;
+	margin-bottom: 0;
+}
+
+/* Rij met meerdere foto's */
+.foto-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+
+.foto-row.enkel img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0;
+	padding: 0;
+	object-fit: cover;
+}
+
+.foto-row.dubbel img {
+	width: 100%;
+	border-radius: 10px;
+	margin: 0;
+	padding: 0;
+	object-fit: cover;
+}
+
+@media (max-width: 600px) {
+	.foto-row.dubbel {
+		flex-wrap: nowrap;
+	}
+	.foto-row.dubbel img {
+		width: 50%;
+	}
+}
+.foto-tile {
+	flex: 1 1 90%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 90%;
+}
+
+.foto-tile img {
+	width: 100%;
+
+	height: auto;
+
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.video-afdeling,
+.affiche-afdeling {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	margin: 2rem 0;
+	padding: 0 1rem;
+}
+
+.video-afdeling iframe {
+	width: 100%;
+	max-width: 700px;
+	aspect-ratio: 16 / 9;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	margin-top: 14rem;
+}
+
+.affiche-afdeling > img {
+	width: 100%;
+	max-width: 700px;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.video-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 700px;
+	aspect-ratio: 16 / 9;
+	cursor: pointer;
+	margin-top: 10rem;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.video-thumbnail {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.play-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3rem;
+	color: white;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	pointer-events: none;
 }
