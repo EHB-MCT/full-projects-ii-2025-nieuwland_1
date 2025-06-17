@@ -2,16 +2,17 @@
 //https://stackoverflow.com/questions/10152390/dynamically-arrange-some-elements-around-a-circle
 function main() {
 	function cirkelTiles() {
+		//const voor permanente waarde/ niet veranderen voor nu mobile versie
 		const tiles = document.querySelectorAll(".tile");
-
+		//waarden
 		const centerX = -82;
 		const centerY = 175;
 		const radius = 310;
-
+		//bereken startangl en endangl
 		const angleStart = -Math.PI / 2;
 		const angleEnd = Math.PI / 2;
 		const angleStep = (angleEnd - angleStart) / (tiles.length + 1);
-
+		//voor elke tile spatie en rotatie berekenen
 		tiles.forEach((tile, index) => {
 			const angle = angleStart + (index + 1) * angleStep;
 
@@ -30,7 +31,7 @@ function main() {
 			}
 		});
 	}
-
+	//hamburger menu active when op geklikt
 	function navIcon() {
 		const navToggle = document.getElementById("navToggle");
 		const navMenu = document.getElementById("navMenu");
@@ -40,7 +41,7 @@ function main() {
 			});
 		}
 	}
-
+	// functies voeren
 	document.addEventListener("DOMContentLoaded", () => {
 		cirkelTiles();
 		navIcon();
