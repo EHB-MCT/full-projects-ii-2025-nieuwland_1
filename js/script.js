@@ -40,7 +40,7 @@ function main() {
 	updateTilesLayout();
 	window.addEventListener("resize", updateTilesLayout);
 }
-function loadVideo(wrapper) {
+function loadVideo1(wrapper) {
 	const video = document.createElement("video");
 	video.setAttribute(
 		"src",
@@ -55,7 +55,7 @@ function loadVideo(wrapper) {
 	wrapper.appendChild(video);
 }
 
-function loadVideo(wrapper) {
+function loadVideo2(wrapper) {
 	const video = document.createElement("video");
 	video.setAttribute("src", "./video/final.mp4");
 	video.setAttribute("controls", "true");
@@ -84,5 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		main();
 	}
 	navIcon();
-	loadVideo;
+	loadVideo2;
+	loadVideo1;
 });
