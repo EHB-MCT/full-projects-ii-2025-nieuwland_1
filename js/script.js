@@ -40,6 +40,8 @@ function main() {
 	updateTilesLayout();
 	window.addEventListener("resize", updateTilesLayout);
 }
+//https://javascript.plainenglish.io/javascript-create-video-element-ded3d63367c4
+//https://stackoverflow.com/questions/54154293/how-to-create-elements-set-attribute-use-innerhtml-and-appendchild-with-js-an?
 function loadVideo1(wrapper) {
 	const video = document.createElement("video");
 	video.src =
