@@ -1,289 +1,264 @@
 .grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 16px;
-	padding-top: 16px;
-	padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .grid__item {
-	background: #e5e7eb;
-	padding: 20px;
-	text-align: center;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-	font-weight: 600;
-	color: #111827;
-	transition: background-color 0.3s ease, transform 0.2s ease;
-	cursor: default;
+  background: #e5e7eb;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  color: #111827;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: default;
 }
 
 .grid__item:hover {
-	background-color: #3b82f6;
-	color: white;
-	transform: translateY(-4px);
-	box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+  background-color: #3b82f6;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
 }
 .tile-grid {
-	position: relative;
-	width: 100%;
-	max-width: 1024px;
-	height: 350px;
-	margin: 3rem auto;
-	z-index: 1;
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  height: 350px;
+  margin: 3rem auto;
+  z-index: 1;
 }
 
 .tile {
-	position: absolute;
-	width: 110px;
-	height: 220px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	font-weight: bold;
-	text-align: center;
-	z-index: 1; /*boven de foto*/
-	text-decoration: none;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 110px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1; /*boven de foto*/
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .tile-icon {
-	width: 45px; /*  kleiner */
-	height: auto; /* correcte verhouding */
-	margin-bottom: 0.2rem;
-	filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+  width: 45px; /*  kleiner */
+  height: auto; /* correcte verhouding */
+  margin-bottom: 0.2rem;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
 }
 
 .tile-iconBig {
-	width: 85px; /*  kleiner */
-	height: auto; /*  correcte verhouding */
-	margin-bottom: 0.2rem;
-	filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+  width: 85px; /*  kleiner */
+  height: auto; /*  correcte verhouding */
+  margin-bottom: 0.2rem;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
 }
 .tile__content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 0.5rem;
-	text-align: center;
-	font-family: outfit, sans;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  font-family: outfit, sans;
 }
 
 /* Posities in cirkelvorm */
 .tile--blue {
-	background: #1d44c0;
+  background: #1d44c0;
 }
 .tile--orange {
-	background: #e1965b;
+  background: #e1965b;
 }
 .tile--red {
-	background: #fa5139;
+  background: #fa5139;
 }
 .tile--black {
-	background: #000000;
+  background: #000000;
 }
 .tile--brown {
-	background: #ad563f;
+  background: #ad563f;
 }
 .contact-tile {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem 0;
-	width: 120vw;
-	overflow-x: visible;
-	position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  width: 120vw;
+  overflow-x: visible;
+  position: relative;
 }
 
 .tile--contact {
-	background-color: black;
-	color: white;
-	padding: 2rem;
-	text-align: center;
-	width: 120vw; /* breder dan scherm voor tape-effect */
-	max-width: none;
-	transform: rotate(-10deg);
-	transform-origin: center center;
-	position: relative;
-	z-index: 10;
-	left: -10vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1rem;
-	font-size: 1.2rem;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  width: 120vw; /* breder dan scherm voor tape-effect */
+  max-width: none;
+  transform: rotate(-10deg);
+  transform-origin: center center;
+  position: relative;
+  z-index: 10;
+  left: -10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+@media (min-width: 768px) {
+  .tile {
+    width: 200px;
+    height: 420px;
+  }
 
-.contact-form {
-	background-color: #ff5e4d;
-	padding: 2rem 1rem;
-	border-radius: 20px;
-	margin: 2rem 1rem;
-	box-sizing: border-box;
-	overflow: hidden;
-}
+  .tile-icon {
+    width: 70px;
+  }
 
-.contact-form form {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-	width: 100%;
-	max-width: 100%;
-	padding: 0.75rem;
-	margin: 0;
-	border: none;
-	border-radius: 10px;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-	font-size: 1rem;
-	box-sizing: border-box;
-	resize: vertical;
-}
-
-.contact-form__row {
-	display: flex;
-	gap: 1rem;
-	flex-wrap: wrap;
-}
-
-.contact-form__row input {
-	flex: 1;
-	min-width: 120px;
-}
-
-.contact-form__submit {
-	background-color: #a6462e;
-	color: white;
-	padding: 1rem;
-	width: 100%;
-	border: none;
-	border-radius: 12px;
-	font-weight: bold;
-	font-size: 1.1rem;
-	cursor: pointer;
+  .tile-iconBig {
+    width: 100px;
+  }
+  .tile__content {
+    font-size: 1.1rem; /* iets groter dan standaard */
+  }
 }
 
 .school-tile {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem 0;
-	width: 120vw;
-	overflow-x: visible;
-	position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  width: 120vw;
+  overflow-x: visible;
+  position: relative;
 }
 
 .tile--school {
-	background-color: #1d44c0;
-	color: white;
-	padding: 2rem;
-	text-align: center;
-	width: 120vw;
-	max-width: none;
-	transform: rotate(15deg);
-	transform-origin: center center;
-	position: relative;
-	z-index: 10;
-	left: -10vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1rem;
-	font-size: 1.2rem;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: #1d44c0;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  width: 120vw;
+  max-width: none;
+  transform: rotate(15deg);
+  transform-origin: center center;
+  position: relative;
+  z-index: 10;
+  left: -10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .foto-header-tile {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem 0;
-	width: 120vw;
-	overflow-x: visible;
-	position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  width: 120vw;
+  overflow-x: visible;
+  position: relative;
 }
 
 .tile--foto {
-	background-color: #ad563f;
-	color: white;
-	padding: 2rem;
-	text-align: center;
-	width: 120vw;
-	max-width: none;
-	transform: rotate(10deg);
-	transform-origin: center center;
-	position: relative;
-	z-index: 10;
-	left: -10vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1rem;
-	font-size: 1.2rem;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: #ad563f;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  width: 120vw;
+  max-width: none;
+  transform: rotate(10deg);
+  transform-origin: center center;
+  position: relative;
+  z-index: 10;
+  left: -10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .foto-nieuws {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem 0;
-	width: 120vw;
-	overflow-x: visible;
-	position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  width: 120vw;
+  overflow-x: visible;
+  position: relative;
 }
 
 .tile--nieuws {
-	background-color: #fa5139;
-	color: white;
-	padding: 2rem;
-	text-align: center;
-	width: 120vw;
-	max-width: none;
-	transform: rotate(5deg);
-	transform-origin: center center;
-	position: relative;
-	z-index: 10;
-	left: -17vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1rem;
-	font-size: 1.2rem;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: #fa5139;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  width: 120vw;
+  max-width: none;
+  transform: rotate(5deg);
+  transform-origin: center center;
+  position: relative;
+  z-index: 10;
+  left: -17vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .inschrijven-tile {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem 0;
-	width: 120vw;
-	overflow-x: visible;
-	position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  width: 120vw;
+  overflow-x: visible;
+  position: relative;
 }
 
 .tile--inschrijven {
-	background-color: #e1965b;
-	color: white;
-	padding: 2rem;
-	text-align: center;
-	width: 120vw;
-	max-width: none;
-	transform: rotate(5deg);
-	transform-origin: center center;
-	position: relative;
-	z-index: 10;
-	left: -10vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1rem;
-	font-size: 1.2rem;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: #e1965b;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  width: 120vw;
+  max-width: none;
+  transform: rotate(5deg);
+  transform-origin: center center;
+  position: relative;
+  z-index: 10;
+  left: -10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.nieuws-blok {
+  padding: 2rem 1rem;
+}
+
+.nieuws-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
 }

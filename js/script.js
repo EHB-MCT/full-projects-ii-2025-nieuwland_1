@@ -1,91 +1,91 @@
 //https://stackoverflow.com/questions/26599782/positioning-divs-in-a-circle-using-javascript
 //https://stackoverflow.com/questions/10152390/dynamically-arrange-some-elements-around-a-circle
 function main() {
-	const tiles = document.querySelectorAll(".tile");
-	const grid = document.querySelector(".tile-grid");
+  const tiles = document.querySelectorAll(".tile");
+  const grid = document.querySelector(".tile-grid");
 
-	//als geen grid
-	if (!grid) return;
+  //als geen grid
+  if (!grid) return;
 
-	function updateTilesLayout() {
-		const isDesktop = window.innerWidth >= 768;
-		const rect = grid.getBoundingClientRect();
+  function updateTilesLayout() {
+    const isDesktop = window.innerWidth >= 768;
+    const rect = grid.getBoundingClientRect();
 
-		const centerX = isDesktop ? rect.width / 2 : -90;
-		const centerY = isDesktop ? rect.height + 130 : rect.height / 2;
+    const centerX = isDesktop ? rect.width / 2 : -90;
+    const centerY = isDesktop ? rect.height + 730 : rect.height / 2;
 
-		const radius = 310;
-		const angleStart = isDesktop ? 0 : -Math.PI / 2;
-		const angleEnd = isDesktop ? Math.PI : Math.PI / 2;
-		const angleStep =
-			((angleEnd - angleStart) / (tiles.length + 1)) * (isDesktop ? -1 : 1);
+    const radius = isDesktop ? 950 : 310;
+    const angleStart = isDesktop ? -Math.PI / 4 : -Math.PI / 2;
+    const angleEnd = isDesktop ? Math.PI / 4 : Math.PI / 2;
+    const angleStep =
+      ((angleEnd - angleStart) / (tiles.length + 1)) * (isDesktop ? -1 : 1);
 
-		tiles.forEach((tile, index) => {
-			const angle = angleStart + (index + 1) * angleStep;
-			const x = centerX + radius * Math.cos(angle);
-			const y = centerY + radius * Math.sin(angle);
-			const deg = angle * (180 / Math.PI) + 90;
+    tiles.forEach((tile, index) => {
+      const angle = angleStart + (index + 1) * angleStep;
+      const x = centerX + radius * Math.cos(angle);
+      const y = centerY + radius * Math.sin(angle);
+      const deg = angle * (180 / Math.PI) + 90;
 
-			tile.style.left = `${x}px`;
-			tile.style.top = `${y}px`;
-			tile.style.transform = `translate(-50%, -50%) rotate(${deg}deg)`;
+      tile.style.left = `${x}px`;
+      tile.style.top = `${y}px`;
+      tile.style.transform = `translate(-50%, -50%) rotate(${deg}deg)`;
 
-			const content = tile.querySelector(".tile__content");
-			if (content) {
-				content.style.transform = `rotate(${-deg}deg)`;
-			}
-		});
-	}
+      const content = tile.querySelector(".tile__content");
+      if (content) {
+        content.style.transform = `rotate(${-deg}deg)`;
+      }
+    });
+  }
 
-	updateTilesLayout();
-	window.addEventListener("resize", updateTilesLayout);
+  updateTilesLayout();
+  window.addEventListener("resize", updateTilesLayout);
 }
 //https://javascript.plainenglish.io/javascript-create-video-element-ded3d63367c4
 //https://stackoverflow.com/questions/54154293/how-to-create-elements-set-attribute-use-innerhtml-and-appendchild-with-js-an?
 function loadVideo1(wrapper) {
-	const video = document.createElement("video");
-	video.src =
-		"./video/Inschrijven in Brussel 2025-2026_ kleuter- en lager onderwijs (1).mp4";
-	video.controls = true;
-	video.autoplay = true;
-	video.style.width = "100%";
-	video.style.height = "100%";
-	video.style.borderRadius = "12px";
+  const video = document.createElement("video");
+  video.src =
+    "./video/Inschrijven in Brussel 2025-2026_ kleuter- en lager onderwijs (1).mp4";
+  video.controls = true;
+  video.autoplay = true;
+  video.style.width = "100%";
+  video.style.height = "100%";
+  video.style.borderRadius = "12px";
 
-	wrapper.innerHTML = "";
-	wrapper.appendChild(video);
+  wrapper.innerHTML = "";
+  wrapper.appendChild(video);
 }
 
 function loadVideo(wrapper) {
-	const video = document.createElement("video");
-	video.src = "./video/Final.mp4";
-	video.controls = true;
-	video.autoplay = true;
-	video.style.width = "100%";
-	video.style.height = "100%";
-	video.style.borderRadius = "12px";
+  const video = document.createElement("video");
+  video.src = "./video/Final.mp4";
+  video.controls = true;
+  video.autoplay = true;
+  video.style.width = "100%";
+  video.style.height = "100%";
+  video.style.borderRadius = "12px";
 
-	wrapper.innerHTML = "";
-	wrapper.appendChild(video);
+  wrapper.innerHTML = "";
+  wrapper.appendChild(video);
 }
 
 function navIcon() {
-	const navToggle = document.getElementById("navToggle");
-	const navMenu = document.getElementById("navMenu");
+  const navToggle = document.getElementById("navToggle");
+  const navMenu = document.getElementById("navMenu");
 
-	// Alleen uitvoeren op mobiel
-	if (window.innerWidth < 768 && navToggle && navMenu) {
-		navToggle.addEventListener("click", () => {
-			navMenu.classList.toggle("active");
-		});
-	}
+  // Alleen uitvoeren op mobiel
+  if (window.innerWidth < 768 && navToggle && navMenu) {
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	if (typeof main === "function") {
-		main();
-	}
-	navIcon();
-	loadVideo1;
-	loadVideo;
+  if (typeof main === "function") {
+    main();
+  }
+  navIcon();
+  loadVideo1;
+  loadVideo;
 });
