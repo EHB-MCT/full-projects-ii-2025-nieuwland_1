@@ -85,5 +85,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 	navIcon();
 	loadVideo1;
-	loadVideo2;
+	loadVideo;
 });
