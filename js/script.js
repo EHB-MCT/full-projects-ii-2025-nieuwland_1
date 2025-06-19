@@ -56,7 +56,7 @@ function loadVideo1(wrapper) {
 
 function loadVideo(wrapper) {
 	const video = document.createElement("video");
-	video.src = "./video/final.mp4";
+	video.src = "./video/Final.mp4";
 	video.controls = true;
 	video.autoplay = true;
 	video.style.width = "100%";
