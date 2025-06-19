@@ -44,7 +44,7 @@ function loadVideo(wrapper) {
 	const video = document.createElement("video");
 	video.setAttribute(
 		"src",
-		"video/Inschrijven in Brussel 2025-2026_ kleuter- en lager onderwijs (1).mp4"
+		"./video/Inschrijven in Brussel 2025-2026_ kleuter- en lager onderwijs (1).mp4"
 	);
 	video.setAttribute("controls", true);
 	video.setAttribute("autoplay", true);
@@ -57,7 +57,7 @@ function loadVideo(wrapper) {
 
 function loadVideo(wrapper) {
 	const video = document.createElement("video");
-	video.setAttribute("src", "video/final.mp4");
+	video.setAttribute("src", "./video/final.mp4");
 	video.setAttribute("controls", "true");
 	video.setAttribute("autoplay", "true");
 	video.style.width = "100%";
