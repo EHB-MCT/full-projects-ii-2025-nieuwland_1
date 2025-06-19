@@ -67,3 +67,8 @@ pre {
   font-size: 2rem;
   font-weight: bold;
 }
+.contact-form__row input {
+  font-family:  Outfit, sans-serif;
+  font-size: 20rem;
+};
+}

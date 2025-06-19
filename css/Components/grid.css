@@ -26,9 +26,11 @@
 }
 .tile-grid {
 	position: relative;
-	width: 350px;
+	width: 100%;
+	max-width: 1024px;
 	height: 350px;
 	margin: 3rem auto;
+	z-index: 1;
 }
 
 .tile {
@@ -196,7 +198,7 @@
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.foto-tile {
+.foto-header-tile {
 	display: flex;
 	justify-content: center;
 	align-items: center;
