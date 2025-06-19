@@ -48,7 +48,7 @@
 }
 .activiteiten__button {
 	position: absolute;
-	bottom: -1.8rem;
+	bottom: -3rem; /* was -1.8rem */
 	left: 50%;
 	transform: translateX(-50%);
 	background: #f97316;
@@ -56,7 +56,7 @@
 	font-size: 0.9rem;
 	border-radius: 7px;
 	font-weight: bold;
-	padding: 0.5rem 0.3rem;
+	padding: 0.7rem 0.4rem;
 	text-decoration: none;
 	width: 12rem;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

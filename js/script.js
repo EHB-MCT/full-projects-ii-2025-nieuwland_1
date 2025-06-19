@@ -40,6 +40,32 @@ function main() {
 	updateTilesLayout();
 	window.addEventListener("resize", updateTilesLayout);
 }
+function loadVideo(wrapper) {
+	const video = document.createElement("video");
+	video.setAttribute(
+		"src",
+		"video/Inschrijven in Brussel 2025-2026_ kleuter- en lager onderwijs (1).mp4"
+	);
+	video.setAttribute("controls", true);
+	video.setAttribute("autoplay", true);
+	video.style.width = "100%";
+	video.style.height = "100%";
+
+	wrapper.innerHTML = "";
+	wrapper.appendChild(video);
+}
+
+function loadVideo(wrapper) {
+	const video = document.createElement("video");
+	video.setAttribute("src", "video/final.mp4");
+	video.setAttribute("controls", "true");
+	video.setAttribute("autoplay", "true");
+	video.style.width = "100%";
+	video.style.borderRadius = "12px";
+
+	wrapper.innerHTML = "";
+	wrapper.appendChild(video);
+}
 
 function navIcon() {
 	const navToggle = document.getElementById("navToggle");
@@ -58,4 +84,5 @@ document.addEventListener("DOMContentLoaded", () => {
 		main();
 	}
 	navIcon();
+	loadVideo;
 });
