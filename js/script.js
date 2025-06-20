@@ -1,6 +1,3 @@
-// ------------------------ //
-// TILES RONDOM EEN CIRKEL //
-// ------------------------ //
 function main() {
   const tiles = document.querySelectorAll(".tile");
   const grid = document.querySelector(".tile-grid");
@@ -40,9 +37,6 @@ function main() {
   window.addEventListener("resize", updateTilesLayout);
 }
 
-// ------------------------ //
-// VIDEO LADEN              //
-// ------------------------ //
 function loadVideo1(wrapper) {
   if (!wrapper) return;
   const video = document.createElement("video");
@@ -72,9 +66,6 @@ function loadVideo(wrapper) {
   wrapper.appendChild(video);
 }
 
-// ------------------------ //
-// HAMBURGER MENU           //
-// ------------------------ //
 function navIcon() {
   const navToggle = document.getElementById("navToggle");
   const navMenu = document.getElementById("navMenu");
@@ -86,9 +77,6 @@ function navIcon() {
   }
 }
 
-// ------------------------ //
-// POSTS LADEN              //
-// ------------------------ //
 function laadPosts() {
   const container = document.getElementById("postContainer");
   if (!container) return;
@@ -126,9 +114,6 @@ function laadPosts() {
     });
 }
 
-// ------------------------ //
-// DOM IS GELADEN           //
-// ------------------------ //
 document.addEventListener("DOMContentLoaded", () => {
   main();
   navIcon();
@@ -145,3 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
     laadPostsBtn.addEventListener("click", laadPosts);
   }
 });
+//https://stackoverflow.com/questions/26599782/positioning-divs-in-a-circle-using-javascript
+//https://stackoverflow.com/questions/10152390/dynamically-arrange-some-elements-around-a-circle
+//https://javascript.plainenglish.io/javascript-create-video-element-ded3d63367c4
+//https://stackoverflow.com/questions/54154293/how-to-create-elements-set-attribute-use-innerhtml-and-appendchild-with-js-an?
