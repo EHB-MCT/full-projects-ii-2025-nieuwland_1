@@ -80,7 +80,40 @@ function navIcon() {
     });
   }
 }
+document.getElementById("laadPosts").addEventListener("click", function () {
+  fetch("http://127.0.0.1:8090/api/collections/posts/records")
+    .then((res) => {
+      if (!res.ok) throw new Error("Netwerkfout");
+      return res.json();
+    })
+    .then((data) => {
+      const container = document.getElementById("postContainer");
+      container.innerHTML = ""; // leegmaken
 
+      data.items.forEach((post) => {
+        const tile = document.createElement("div");
+        tile.className = "foto-tile";
+
+        let imageHTML = "";
+        if (post.afbeelding) {
+          const imgUrl = `http://127.0.0.1:8090/api/files/posts/${post.id}/${post.afbeelding}`;
+          imageHTML = `<img src="${imgUrl}" alt="${post.titel}" />`;
+        }
+
+        tile.innerHTML = `
+          ${imageHTML}
+          <div class="foto-button">${post.titel}</div>
+          <p>${post.beschrijving || ""}</p>
+        `;
+
+        container.appendChild(tile);
+      });
+    })
+    .catch((err) => {
+      alert("Er is een fout opgetreden bij het laden van posts.");
+      console.error(err);
+    });
+});
 document.addEventListener("DOMContentLoaded", () => {
   if (typeof main === "function") {
     main();
