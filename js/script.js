@@ -1,32 +1,32 @@
 function main() {
-  const tiles = document.querySelectorAll(".tile");
-  const grid = document.querySelector(".tile-grid");
+  let tiles = document.querySelectorAll(".tile");
+  let grid = document.querySelector(".tile-grid");
 
   if (!grid) return;
 
   function updateTilesLayout() {
-    const isDesktop = window.innerWidth >= 768;
-    const rect = grid.getBoundingClientRect();
+    let isDesktop = window.innerWidth >= 768;
+    let rect = grid.getBoundingClientRect();
 
-    const centerX = isDesktop ? rect.width / 2 : -90;
-    const centerY = isDesktop ? rect.height + 730 : rect.height / 2;
-    const radius = isDesktop ? 950 : 310;
-    const angleStart = isDesktop ? -Math.PI / 4 : -Math.PI / 2;
-    const angleEnd = isDesktop ? Math.PI / 4 : Math.PI / 2;
-    const angleStep =
+    let centerX = isDesktop ? rect.width / 2 : -90;
+    let centerY = isDesktop ? rect.height + 730 : rect.height / 2;
+    let radius = isDesktop ? 950 : 310;
+    let angleStart = isDesktop ? -Math.PI / 4 : -Math.PI / 2;
+    let angleEnd = isDesktop ? Math.PI / 4 : Math.PI / 2;
+    let angleStep =
       ((angleEnd - angleStart) / (tiles.length + 1)) * (isDesktop ? -1 : 1);
 
     tiles.forEach((tile, index) => {
-      const angle = angleStart + (index + 1) * angleStep;
-      const x = centerX + radius * Math.cos(angle);
-      const y = centerY + radius * Math.sin(angle);
-      const deg = angle * (180 / Math.PI) + 90;
+      let angle = angleStart + (index + 1) * angleStep;
+      let x = centerX + radius * Math.cos(angle);
+      let y = centerY + radius * Math.sin(angle);
+      let deg = angle * (180 / Math.PI) + 90;
 
       tile.style.left = `${x}px`;
       tile.style.top = `${y}px`;
       tile.style.transform = `translate(-50%, -50%) rotate(${deg}deg)`;
 
-      const content = tile.querySelector(".tile__content");
+      let content = tile.querySelector(".tile__content");
       if (content) {
         content.style.transform = `rotate(${-deg}deg)`;
       }
@@ -39,7 +39,7 @@ function main() {
 
 function loadVideo1(wrapper) {
   if (!wrapper) return;
-  const video = document.createElement("video");
+  let video = document.createElement("video");
   video.src =
     "./video/Inschrijven in Brussel 2025-2026_ kleuter- en lager onderwijs (1).mp4";
   video.controls = true;
