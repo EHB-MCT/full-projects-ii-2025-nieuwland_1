@@ -1,0 +1,604 @@
+/* global.css */
+/*https://www.w3schools.com/css/css_positioning.asp*/
+/*https://www.w3schools.com/css/css_boxmodel.asp*/
+
+:root {
+  --color-orange: #f97316;
+  --color-orange-dark: #ea580c;
+  --color-blue: #3b82f6;
+  --color-blue-dark: #2563eb;
+  --color-bg: #fdfdfd;
+  --color-text: #111;
+  --font-main: "Outfit", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  color: #111111;
+  font-family: "Outfit", sans-serif;
+}
+section {
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* hero met achtergrondafbeelding */
+.hero {
+  background: url("../images/schoolplein.jpg") no-repeat center/cover;
+  color: white;
+  text-align: center;
+
+  padding: 1rem 5rem;
+}
+
+.hero__logo {
+  width: 25rem;
+  margin-bottom: 1rem;
+  margin-top: 6rem;
+}
+
+.hero__logoIndex {
+  width: 20rem;
+  margin-bottom: 10rem;
+}
+
+@media (min-width: 768px) {
+  .map iframe {
+    height: 38rem;
+    width: 60%;
+  }
+  .hero__logoIndex {
+    width: 50rem;
+  }
+
+  .foto-row.dubbel img,
+  .foto-row.enkel img {
+    width: 48%;
+    max-width: 30%;
+  }
+
+  .foto-row {
+    justify-content: center;
+    gap: 2%;
+  }
+
+  .foto-row.enkel {
+    justify-content: center;
+  }
+}
+.backgroundImage {
+  background: url("../images/IMG_9707.JPG") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.backgroundImage::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  /* gradient voor goede transitie met volgende div*/
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #6aa7f9 100%
+  );
+  pointer-events: none;
+}
+
+.contactBACk {
+  background: url(../images/IMG_9695.JPG) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.schoolBACk {
+  background: url(../images/IMG_9646.JPG) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+.inschrijvenBACk::after,
+.contactBACk::after,
+.fotoBACK::after,
+.schoolBACk::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #6aa7f9 100%
+  );
+  pointer-events: none;
+}
+.fotoBACK {
+  background: url(../images/IMG_9624.JPG) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.inschrijvenBACk {
+  background: url(../images/IMG_9705.JPG) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.activiteiten {
+  padding-top: 8rem;
+}
+.content-titel {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Outfit, sans-serif;
+  padding-bottom: 1rem;
+}
+.activiteiten__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.activiteiten__image {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+.activiteiten__tekst {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+.map-blok iframe {
+  width: 100%;
+  height: 300px; /* ← pas deze waarde aan naar wens */
+  max-width: none;
+  border-radius: 1rem;
+}
+.content-row__blok {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.content-row__tekst {
+  max-width: 450px;
+  font-size: 1.4rem;
+  font-family: var(--font-main);
+  color: #1a1a1a;
+}
+
+.content-row__titel {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: var(--font-main);
+}
+
+.content-row__media {
+  width: 100%;
+  max-width: 500px;
+}
+
+.colorBackground {
+  background: #6aabfb;
+}
+
+.wrapperBACK {
+  position: relative;
+  background-color: #6aabfb;
+  width: 100%;
+  min-height: 100vh;
+}
+.school-info {
+  background-color: #60a5fa;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13rem;
+}
+.school-info2 {
+  background-color: #6aabfb;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-blok {
+  position: relative;
+  width: 100%;
+}
+
+.info-img {
+  width: 90%;
+  max-width: 100%;
+}
+
+.info-img.left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.info-img.right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.info-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-tekst {
+  position: absolute;
+  max-width: 80%;
+  padding: 1rem;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-tekst.rechts {
+  left: 0;
+  bottom: -10rem;
+}
+
+.info-tekst.links {
+  right: 0;
+  bottom: -10rem;
+}
+
+.info-tekst.links2 {
+  right: 0;
+  bottom: -9rem;
+}
+
+.info-tekst.links3 {
+  right: 0;
+  bottom: -14rem;
+}
+
+.info-tekst.rood {
+  background-color: #f44336;
+}
+
+.info-tekst.oranje {
+  background-color: #e1965b;
+}
+
+.info-tekst.blauw {
+  background-color: #1e3a8a;
+  margin-bottom: 7rem;
+}
+@media (min-width: 768px) {
+  .nieuws-grid {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .foto-tile {
+    max-width: 600px;
+    flex: 1;
+  }
+  .foto-tile img {
+    border-radius: 10px;
+  }
+  .activiteiten__wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .activiteiten__tekst,
+  .content-tekst {
+    display: block;
+    max-width: 450px;
+    padding-left: 2rem;
+
+    font-size: 1.4rem;
+    font-family: Outfit, sans-serif;
+    color: #1a1a1a;
+  }
+
+  .activiteiten__titel,
+  .content-titel {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: var(--font-main);
+  }
+
+  .activiteiten__button {
+    position: static !important;
+    transform: none !important;
+    margin-top: 2rem;
+    margin-left: 0;
+    width: fit-content;
+  }
+  .content-button {
+    position: static !important;
+    transform: none !important;
+    margin-top: 2rem;
+    margin-left: 0;
+    width: fit-content;
+    color: #1e3a8a;
+  }
+
+  .content-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .content--map {
+    flex-direction: row-reverse;
+  }
+
+  .content--video {
+    flex-direction: row;
+  }
+  .content-tekst {
+    padding: 0 1rem;
+  }
+  .map-blok {
+    width: 50rem;
+  }
+  .map-blok iframe {
+    width: 100%;
+    height: 350px; /* ← pas deze waarde aan naar wens */
+    max-width: none;
+    border-radius: 1rem;
+  }
+  .school-info {
+    flex-direction: column;
+    gap: 15rem;
+    padding: 4rem 2rem;
+  }
+  .school-info {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+  }
+
+  .info-blok {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    gap: 2rem;
+  }
+
+  .info-img,
+  .info-tekst {
+    width: 60%;
+  }
+
+  .info-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .info-tekst {
+    background-color: white;
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    font-size: 1.3rem;
+    line-height: 1.8;
+    text-align: left;
+    position: static;
+  }
+
+  .info-blok.links .info-img {
+    order: 1;
+  }
+
+  .info-blok.links .info-tekst {
+    order: 2;
+  }
+
+  .info-blok.rechts .info-img {
+    order: 2;
+  }
+
+  .info-blok.rechts .info-tekst {
+    order: 1;
+  }
+}
+@media (max-width: 767px) {
+  .activiteiten__tekst p,
+  .activiteiten__titel {
+    display: none;
+  }
+
+  .content-tekst p {
+    display: none;
+  }
+
+  .content-button,
+  .button--secondary {
+    display: inline-block !important;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .foto-row.dubbel {
+    flex-wrap: nowrap;
+  }
+  .foto-row.dubbel img {
+    width: 50%;
+  }
+  .video-wrapper2 {
+    margin-top: 0 auto;
+  }
+}
+.foto-collage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+/* Rij met meerdere foto's */
+.foto-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.foto-row.enkel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+.foto-row.dubbel img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+.foto-tile {
+  flex: 1 1 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+}
+
+.foto-tile img {
+  width: 100%;
+
+  height: auto;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.video-afdeling,
+.affiche-afdeling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.video-afdeling iframe {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 14rem;
+}
+
+.affiche-afdeling > img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.video-wrapper2 {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 10rem;
+  aspect-ratio: 16 / 9;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
