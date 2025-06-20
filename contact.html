@@ -1,123 +1,102 @@
 <!DOCTYPE html>
 <html lang="nl">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Basisschool Nieuwland</title>
-		<link href="./css/reset.css" rel="stylesheet" />
-		<link href="./css/main.css" rel="stylesheet" />
-	</head>
 
-	<body>
-		<!-- Navigatie -->
-		<nav class="main-nav">
-			<button class="nav__toggle" id="navToggle">☰</button>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Basisschool Nieuwland</title>
+	<link href="./css/reset.css" rel="stylesheet" />
+	<link href="./css/main.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="./images/logoGeenNieuwland.png">
+</head>
 
-			<div class="nav__menu" id="navMenu">
-				<a href="index.html" class="nav__link">Home</a>
-				<a href="school.html" class="nav__link">Over</a>
-				<a href="inschrijven.html" class="nav__link">Inschrijven</a>
-				<a href="nieuws.html" class="nav__link">Nieuws</a>
-				<a href="contact.html" class="nav__link">Contact</a>
-				<a href="foto.html" class="nav__link">Team</a>
+<body>
+	<!-- Navigatie -->
+	<nav class="main-nav">
+		<button class="nav__toggle" id="navToggle">☰</button>
+
+		<div class="nav__menu" id="navMenu">
+			<a href="index.html" class="nav__link">Home</a>
+			<a href="school.html" class="nav__link">Over</a>
+			<a href="inschrijven.html" class="nav__link">Inschrijven</a>
+			<a href="nieuws.html" class="nav__link">Nieuws</a>
+			<a href="contact.html" class="nav__link">Contact</a>
+			<a href="foto.html" class="nav__link">Foto's</a>
+		</div>
+	</nav>
+	<div class="contactBACk">
+		<!-- Hero -->
+		<header class="hero">
+			<div class="container">
+				<img src="images/logoNieuwland.png" alt="Nieuwland logo" class="hero__logo" />
 			</div>
-		</nav>
-		<div class="contactBACk">
-			<!-- Hero -->
-			<header class="hero">
-				<div class="container">
-					<img
-						src="images/logoNieuwland.png"
-						alt="Nieuwland logo"
-						class="hero__logo"
-					/>
-				</div>
-			</header>
+		</header>
 
-			<!-- Contact tegel -->
-			<section class="contact-tile">
-				<div class="tile--contact">
-					<i class="icon icon-chat">
-						<img
-							src="images/message.png"
-							class="tile-iconBig"
-							alt="Contact icoon"
-						/>
-					</i>
-					<span>Contact</span>
-				</div>
-			</section>
-		</div>
-		<div class="wrapperBACK">
-			<section class="contact-buttons">
-				<a href="tel:+32498596556" class="contact-button contact-button--phone">
-					<img src="images/Phone.png" alt="Telefoon" class="button-icon" />
-					Telefoon
-				</a>
-				<a href="mailto:#" class="contact-button contact-button--mail">
-					<img src="images/Mail.png" alt="Mail" class="button-icon" />
-					Mail
-				</a>
-				<a
-					href="https://wa.me/3212345678"
-					class="contact-button contact-button--whatsapp"
-				>
-					<img src="images/Whatsapp.png" alt="Whatsapp" class="button-icon" />
-					Whatsapp
-				</a>
-				<a href="#formulier" class="contact-button contact-button--form">
-					<img
-						src="images/Form.png"
-						alt="Contactformulier"
-						class="button-icon"
-					/>
-					Contactformulier
-				</a>
-			</section>
+		<!-- Contact tegel -->
+		<section class="contact-tile">
+			<div class="tile--contact">
+				<i class="icon icon-chat">
+					<img src="images/message.png" class="tile-iconBig" alt="Contact icoon" />
+				</i>
+				<span>Contact</span>
+			</div>
+		</section>
+	</div>
+	<div class="wrapperBACK">
+		<section class="contact-buttons">
+			<a href="tel:+32498596556" class="contact-button contact-button--phone">
+				<img src="images/Phone.png" alt="Telefoon" class="button-icon" />
+				Telefoon
+			</a>
+			<a href="mailto:#" class="contact-button contact-button--mail">
+				<img src="images/Mail.png" alt="Mail" class="button-icon" />
+				Mail
+			</a>
+			<a href="https://wa.me/3212345678" class="contact-button contact-button--whatsapp">
+				<img src="images/Whatsapp.png" alt="Whatsapp" class="button-icon" />
+				Whatsapp
+			</a>
+			<a href="#formulier" class="contact-button contact-button--form">
+				<img src="images/Form.png" alt="Contactformulier" class="button-icon" />
+				Contactformulier
+			</a>
+		</section>
 
-			<section class="contact-form" id="formulier">
-				<form action="#" method="POST">
-					<input type="text" placeholder="E-mail of telefoonnummer" required />
-					<div class="contact-form__row">
-						<input type="text" placeholder="Klas" required />
-						<input type="text" placeholder="Nummer" required />
-					</div>
-					<input type="text" placeholder="Naam kind" required />
-					<textarea placeholder="Vraag of bericht" required></textarea>
-					<button type="submit" class="contact-form__submit">Verzenden</button>
-				</form>
-			</section>
-			<!-- Footer -->
-			<footer class="footerContact">
-				<div class="container">
-					<img
-						src="images/logoNieuwland.png"
-						alt="Nieuwland logo"
-						class="footer__logo"
-					/>
-					<nav>
-						<a href="index.html" class="nav__link">Home</a>
-						<a href="school.html" class="nav__link">Onze school</a>
-						<a href="inschrijven.html" class="nav__link">Inschrijven</a>
-						<a href="nieuws.html" class="nav__link">Nieuws & agenda</a>
-						<a href="contact.html" class="nav__link">Contact</a>
-					</nav>
-					<div class="footer__socials">
-						<a href="https://www.facebook.com/bsnieuwland/" target="_blank"
-							><img src="images/Facebook.png" alt="Facebook"
-						/></a>
-						<a
-							href="https://www.onderwijsinbrussel.be/school/basisschool-nieuwland"
-							target="_blank"
-							><img src="images/BrusselNLogo.png" alt="Nbrussel"
-						/></a>
-						<a href="https://maps.app.goo.gl/MGodU7kNHdyR86fC7" target="_blank"
-							><img src="images/Maps.png" alt="Map" class="navMapLoc"
-						/></a>
-					</div>
+		<section class="contact-form" id="formulier">
+			<form action="#" method="POST">
+				<input type="text" placeholder="E-mail of telefoonnummer" required />
+				<div class="contact-form__row">
+					<input type="text" placeholder="Klas" required />
+					<input type="text" placeholder="Nummer" required />
 				</div>
-			</footer>
-		</div>
-	</body>
-	<script src="js/script.js"></script>
+				<input type="text" placeholder="Naam kind" required />
+				<textarea placeholder="Vraag of bericht" required></textarea>
+				<button type="submit" class="contact-form__submit">Verzenden</button>
+			</form>
+		</section>
+		<!-- Footer -->
+		<footer class="footerContact">
+			<div class="container">
+				<img src="images/logoNieuwland.png" alt="Nieuwland logo" class="footer__logo" />
+				<nav>
+					<a href="index.html" class="nav__link">Home</a>
+					<a href="school.html" class="nav__link">Onze school</a>
+					<a href="inschrijven.html" class="nav__link">Inschrijven</a>
+					<a href="nieuws.html" class="nav__link">Nieuws & agenda</a>
+					<a href="contact.html" class="nav__link">Contact</a>
+				</nav>
+				<div class="footer__socials">
+					<a href="https://www.facebook.com/bsnieuwland/" target="_blank"><img src="images/Facebook.png"
+							alt="Facebook" /></a>
+					<a href="https://www.onderwijsinbrussel.be/school/basisschool-nieuwland" target="_blank"><img
+							src="images/BrusselNLogo.png" alt="Nbrussel" /></a>
+					<a href="https://maps.app.goo.gl/MGodU7kNHdyR86fC7" target="_blank"><img src="images/Maps.png"
+							alt="Map" class="navMapLoc" /></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script src="js/script.js"></script>
+
 </html>
